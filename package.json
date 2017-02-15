@@ -4,7 +4,8 @@
   "description": "demo panel for testing",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "DEBUG=theeye ./node_modules/.bin/nodemon index"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,12 @@
   "bugs": {
     "url": "https://github.com/theeye-io-team/theeye-demo/issues"
   },
-  "homepage": "https://github.com/theeye-io-team/theeye-demo#readme"
+  "homepage": "https://github.com/theeye-io-team/theeye-demo#readme",
+  "dependencies": {
+    "connect": "3.5.0",
+    "debug": "2.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "1.11.0"
+  }
 }

@@ -1,0 +1,14 @@
+<h1>TheEye test server</h1>
+<h2>/scraper</h2>
+<h3>this endpoint always return the stored query string value as JSON. startup value is "success"</h3>
+<ul>
+  <li>GET : get the stored value </li>
+  <li>PUT : update the stored value using query string</li>
+</ul>
+<h2>/process</h2>
+<h3>this endpoint creates a named process in the system that stores a unix timestamp every second in the file /tmp/theeye-${name}-process.log</h3>
+<ul>
+  <li>GET : return the status of the process name ?name=name</li>
+  <li>POST : create a process with the provided name ?name=name via query string</li>
+  <li>DELETE : stop a process with the provided name ?name=name via query string</li>
+</ul>
